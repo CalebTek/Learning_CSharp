@@ -51,10 +51,10 @@ namespace E08_BitwiseOperators
             bool cond3 = false;
             bool cond4 = true;
 
-            int mask = cond1 ? 1 : 0;       // 0b00000001
-            mask |= (cond2 ? 1 : 0) << 1;   // 0b00000010
-            mask |= (cond3 ? 1 : 0) << 2;   // 0b00000100 
-            mask |= (cond4 ? 1 : 0) << 3;   // 0b00001000 
+            int mask = cond1 ? 1 : 0;       // 0b00000001 >> 1
+            mask |= (cond2 ? 1 : 0) << 1;   // 0b00000010 >> 2
+            mask |= (cond3 ? 1 : 0) << 2;   // 0b00000100 >> 4
+            mask |= (cond4 ? 1 : 0) << 3;   // 0b00001000 >> 8
             Console.WriteLine(mask);
 
             switch(mask)
