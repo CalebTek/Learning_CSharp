@@ -54,6 +54,7 @@ namespace MyGeometryKernel
             this.Y = y;
             this.Z = z;
         }
+        
 
         /// <summary>
         /// Creates a MyVector as a copy of other.
